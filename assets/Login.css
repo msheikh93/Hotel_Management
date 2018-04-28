@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Billabong;
+    src: url(Billabong.ttf);
+    font-weight: bold;
+  }
+  
+  body {
+    background-image: url('Login.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .Login {
+    display: grid;
+    background-color: maroon;
+    opacity: 0.9;
+    width: 40%;
+    height: 250px;
+    margin: 15% auto auto auto;
+    border: 2px solid white;
+    border-radius: 8px;
+    border-bottom: 10px solid white;
+    grid-template-columns: auto 5% auto auto;
+    grid-template-rows: 30% 15% 15% 10%;
+    grid-gap: 10px;
+    grid-template-areas:
+    'welcome welcome welcome welcome'
+    'userName userName userNameText userNameText'
+    'passWord passWord passWordText passWordText'
+    '. showPassword showPasswordText submit';
+  }
+  
+  .welcome {
+    grid-area: welcome;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Billabong;
+    color: white;
+    font-size: 300%;
+  }
+
+  .userName {
+    grid-area: userName;
+    color: white;
+    font-size: 150%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 0;
+    padding-left: 10%;
+  }
+  
+  .userNameText {
+    grid-area: userNameText;
+    color: black;
+    font-size: 120%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    width: 80%;
+    padding-left: 2%;
+  }
+  
+  .passWord {
+    grid-area: passWord;
+    color: white;
+    font-size: 150%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 0;
+    padding-left: 10%;
+  }
+  
+  .passWordText {
+    grid-area: passWordText;
+    color: black;
+    font-size: 120%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    width: 80%;
+    padding-left: 2%;
+  }
+  
+  .showPassword {
+    justify-self: end;
+    grid-area: showPassword;
+    align-self: center;
+  }
+  
+  .showPasswordCheck {
+    grid-area: showPasswordText;
+    align-self: center;
+    font-size: 100%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: white;
+  }
+  
+  .showPassword:hover {
+    cursor: pointer;
+  }
+  
+  .showPasswordCheck:hover {
+    cursor: pointer;
+  }
+  
+  .submit {
+    grid-area: submit;
+    justify-self: start;
+    border: white solid 1px;
+    border-radius: 4px;
+    opacity: 0.6; 
+    background: white;
+  }
+  
+  .submit:hover {
+    cursor: pointer;
+    opacity: 1;
+  }

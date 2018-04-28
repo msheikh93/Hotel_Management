@@ -1,0 +1,137 @@
+@font-face {
+    font-family: Billabong;
+    src: url(Billabong.ttf);
+    font-weight: bold;
+  }
+  
+  body {
+    background-image: url('Login.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .admin {
+    display: grid;
+    background-color: maroon;
+    opacity: 0.9;
+    width: 65%;
+    height: 500px;
+    margin: 5% auto auto auto;
+    border: 2px solid white;
+    border-radius: 8px;
+    border-bottom: 10px solid white;
+    grid-template-columns: auto auto auto auto auto 10%;
+    grid-template-rows: 10% 8% 8% 8% 8% 8% 8% 8%;
+    grid-gap: 1%;
+    grid-template-areas:
+    'admin admin admin admin admin logOut'
+    'customerHeading customerHeading roomHeading roomHeading employeeHeading employeeHeading'
+    '. . . . . .'
+    '. . . . . .'
+    '. . . . . .'
+    '. . . . . .'
+    '. . . . . .'
+    '. . . . . .';
+  }
+
+  .adminTitle {
+    grid-area: admin;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Billabong;
+    color: white;
+    font-size: 300%;
+  }
+
+  .logOutForm {
+    justify-self: stretch;
+    grid-area: logOut;
+  }
+
+  .logOut {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: white solid 1px;
+    border-radius: 4px;
+    opacity: 0.6; 
+    background: white;
+    height: 10%;
+    font-size: 80%;
+    width: 100%;
+  }
+
+  .logOut:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  .customerHeadingForm {
+    grid-area: customerHeading;
+    text-align: center;
+    font-family: Billabong;
+    color: white;
+    font-size: 200%;
+  }
+
+  .roomsHeadingForm {
+    grid-area: roomHeading;
+    text-align: center;
+    font-family: Billabong;
+    color: white;
+    font-size: 200%;
+  }
+
+  .employeeHeadingForm {
+    grid-area: employeeHeading;
+    text-align: center;
+    font-family: Billabong;
+    color: white;
+    font-size: 200%;
+  }
+
+  .editCustomer {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: white solid 1px;
+    border-radius: 4px;
+    opacity: 0.6; 
+    background: white;
+    height: 10%;
+    font-size: 50%;
+  }
+
+  .editCustomer:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  .editEmployee {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: white solid 1px;
+    border-radius: 4px;
+    opacity: 0.6; 
+    background: white;
+    height: 10%;
+    font-size: 50%;
+  }
+
+  .editEmployee:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  .editRooms {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: white solid 1px;
+    border-radius: 4px;
+    opacity: 0.6; 
+    background: white;
+    height: 10%;
+    font-size: 50%;
+  }
+
+  .editRooms:hover {
+    cursor: pointer;
+    opacity: 1;
+  }

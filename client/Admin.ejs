@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/Admin.css">
+    <meta charset="UTF-8">
+    <title>Code Smith Hotel</title>
+</head>
+
+<body>
+    <div class="admin">
+        <h1 class="adminTitle">Welcome Admin</h1>
+
+        <form class="logOutForm" method="GET" action='/'>
+            <button class = "logOut">Log Out</button>
+        </form>
+
+        <form class="customerHeadingForm" method="GET" action='/editcustomer'>
+            <h1 class="customerHeading">Edit Customer</h1>
+            <input class= "editCustomer" type="submit" value="Edit Customer Information" />
+        </form>
+        <form class="roomsHeadingForm" method="GET" action='/editrooms'>
+            <h1 class="roomsHeading">Edit Rooms</h1>
+            <input class= "editRooms" type="submit" value="Edit Room Information" />
+        </form>
+        <form class="employeeHeadingForm" method="GET" action='/editemployee'>
+            <h1 class="employeeHeading">Edit Employees</h1>
+            <input class= "editEmployee" type="submit" value="Edit Employee Information" />
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/Lobby.css">
+    <meta charset="UTF-8">
+    <title>Code Smith Hotel</title>
+</head>
+
+<body>
+    <form class="logOutForm" method="GET" action='/'>
+        <button class="logOut">Log Out</button>
+    </form>
+    <form method="POST" action='/createCustomer'>
+        <div class="lobby">
+            <h1 class="lobbyTitle">Lobby</h1>
+            <h1 class="firstName">First Name</h1>
+            <input class="firstNameText" name="firstname"></input>
+            <h1 class="lastName">Last Name</h1>
+            <input class="lastNameText" name="lastname"></input>
+            <h1 class="creditCard">Credit Card</h1>
+            <input class="creditCardText" name="creditcard"></input>
+            <input type="submit" value="Add Client" class="addClient"></input>
+        </div>
+    </form>
+</body>
+
+</html>

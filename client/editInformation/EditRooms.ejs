@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/EditRooms.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/EditRooms.js"></script>
+    <meta charset="UTF-8">
+    <title>Code Smith Hotel</title>
+</head>
+
+<body>
+    <div class="admin">
+
+        <h1 class="adminTitle">Edit Rooms</h1>
+
+        <form class="logOutForm" method="GET" action='/'>
+            <button class="logOut">Log Out</button>
+        </form>
+
+        <form class="backForm" method="GET" action='/admin'>
+            <button class="back">Back</button>
+        </form>
+
+        <select class="allRooms"></select>
+        <button class="roomNumberHeading">Room Number</button>
+        <input class="roomNumber" type="text">
+
+        <form class="addRoomHeadingForm" method="GET" action='/editrooms'>
+            <h1 class="addRoomHeading">Add Room</h1>
+            <input class="addRoom" type="submit" value="Insert" />
+        </form>
+
+        <form class="editRoomHeadingForm" method="GET" action='/editrooms'>
+            <h1 class="editRoomHeading">Edit Room</h1>
+            <input class="editRoom" type="submit" value="Update" />
+        </form>
+
+        <form class="deleteRoomHeadingForm" method="GET" action='/editrooms'>
+            <h1 class="deleteRoomHeading">Delete Room</h1>
+            <input class="deleteRoom" type="submit" value="Delete" />
+        </form>
+
+    </div>
+</body>
+
+</html>

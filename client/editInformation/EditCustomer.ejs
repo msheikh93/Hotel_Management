@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/EditCustomer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/EditCustomer.js"></script>
+    <meta charset="UTF-8">
+    <title>Code Smith Hotel</title>
+</head>
+
+<body>
+    <div class="admin">
+        <h1 class="adminTitle">Edit Customers</h1>
+
+        <form class="logOutForm" method="GET" action='/'>
+            <button class = "logOut">Log Out</button>
+        </form>
+
+        <form class="backForm" method="GET" action='/admin'>
+            <button class = "back">Back</button>
+        </form>
+        
+        <select class="allCustomers"></select>
+        <button class = "firstNameHeading">First Name</button>
+        <input class="firstName" type="text">
+        <button class = "lastNameHeading">Last Name</button>
+        <input class="lastName" type="text">
+        <button class = "creditCardHeading">Credit Card</button>
+        <input class="creditCard" type="text">
+
+        <form class="editCustomerHeadingForm" method="GET" action='/editcustomer'>
+            <h1 class="editCustomerHeading">Edit Customer Information</h1>
+            <input class="editCustomer" type="submit" value="Update" />
+        </form>
+
+        <form class="deleteCustomerHeadingForm" method="GET" action='/editcustomer'>
+            <h1 class="deleteCustomerHeading">Delete Customer Information</h1>
+            <input class="deleteCustomer" type="submit" value="Delete" />
+        </form>
+
+    </div>
+</body>
+
+</html>

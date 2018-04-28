@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/Login.css">
+    <meta charset="UTF-8">
+    <title>Code Smith Hotel</title>
+</head>
+
+<body>
+    <form method="POST" action='/login'>
+        <div class="Login">
+            <h1 class="welcome">Welcome To CodeSmith Hotel</h1>
+            <h2 class="userName">UserName</h2>
+            <input name="username" class="userNameText"></input>
+            <h2 class="passWord">PassWord</h2>
+            <input name="password" type="password" class="passWordText"></input>
+            <input type="checkbox" onclick={showPassword()} class="showPassword"></input>
+            <h2 class="showPasswordCheck" onClick={showPassword()}>Show Password</h2>
+            <input type="submit" value="Submit" class="submit"></input>
+        </div>
+    </form>
+</body>
+
+</html>
+
+<script>
+    function showPassword() {
+        var passWordTextType = document.getElementsByClassName('passWordText')[0].type;
+        document.getElementsByClassName('passWordText')[0].type = (passWordTextType === "password") ? "text" : "password";
+    }
+</script>
